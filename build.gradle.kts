@@ -24,16 +24,6 @@ dependencies {
     codegen("software.amazon.smithy:smithy-cli:1.33.0")
 }
 
-buildscript {
-    repositories {
-        mavenCentral()
-    }
-    dependencies {
-        // This dependency is required to build the model.
-        classpath("software.amazon.smithy:smithy-aws-traits:[1.0, 2.0[")
-    }
-}
-
 repositories {
     mavenCentral()
 }
@@ -41,7 +31,6 @@ repositories {
 dependencies {
     implementation(kotlin("stdlib"))
     implementation("software.amazon.smithy:smithy-model:[1.0, 2.0[")
-    implementation("software.amazon.smithy:smithy-aws-traits:[1.0, 2.0[")
     api("aws.smithy.kotlin:runtime-core:0.21.3")
     api("aws.smithy.kotlin:smithy-client:0.21.3")
     api("aws.smithy.kotlin:tracing-core:0.21.3")
