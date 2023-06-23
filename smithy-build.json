@@ -1,0 +1,15 @@
+{
+  "version": "1.0",
+  "plugins": {
+    "kotlin-codegen": {
+      "package": {
+        "name": "generated",
+        "version": "0.0.1"
+      },
+      "build": {
+        "rootProject": false,
+        "generateDefaultBuildFiles": false
+      }
+    }
+  }
+}
